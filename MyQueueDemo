@@ -1,0 +1,61 @@
+public class MyQueueDemoo {
+
+	public static void main(String[] args) {
+		MyQueue<Integer> listInt = new MyQueue<Integer>();
+		MyQueue<Double> listDoub = new MyQueue<Double>();
+		MyQueue<String> listString = new MyQueue<String>();
+
+
+		
+		listInt.enqueue(5);
+		listInt.enqueue(2);
+		listInt.enqueue(3);
+		listInt.enqueue(4);
+	
+		listDoub.enqueue(2.0);
+		listDoub.enqueue(3.0);
+		listDoub.enqueue(4.0);
+		
+		listString.enqueue("Tan");
+		listString.enqueue("Man");
+		listString.enqueue("Fan");
+
+				
+		System.out.println("Integer "+listInt.toString());
+		System.out.println("Double " +listDoub.toString());
+		System.out.println("String "+listString.toString());
+
+		listInt.dequeue();	
+		listInt.dequeue();		
+		listInt.dequeue();	
+		
+		listDoub.dequeue();	
+		listDoub.dequeue();		
+		
+		listString.dequeue();	
+		listString.dequeue();		
+		
+
+		System.out.println();
+		System.out.println("Integer 1. Test : "+listInt.toString());
+		System.out.println("Double 1. Test : " +listDoub.toString());
+		System.out.println("String 1. Test : "+listString.toString());
+
+		System.out.println();
+		System.out.println("Integer Empty?: "+listInt.isEmpty());
+		System.out.println("Integer Size: "+listInt.size());
+		
+		System.out.println();
+		System.out.println("Double Empty?: "+listDoub.isEmpty());
+		System.out.println("Double Size "+listDoub.size());
+		System.out.println();
+
+		System.out.println("String Empty?: "+listString.isEmpty());
+		System.out.println("String Size: "+listString.size());
+
+		//noch hinzufugen neue Queue mit 1000 Elemente fuellen, anschliessend weiter 1000 zufaellige mit operationen durchfuhren. 
+		
+		
+	}
+
+}
