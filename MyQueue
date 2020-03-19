@@ -1,0 +1,47 @@
+import java.util.ArrayList;
+
+public class MyQueue<T> {
+	
+	private ArrayList<T> list = new ArrayList<T>();
+		
+	//constructor, creats an empty queue
+		MyQueue(){
+			this.list=(ArrayList<T>) list;
+		}
+	//inserts item at the end of this queue
+		public void enqueue(T item) {
+			list.add(item);
+		}
+	//returns the first item of this queue and deletes it
+	//returns null, if this queue is empty
+		public T dequeue() {
+			if(list.size() == 0) {
+				return null;
+			} else {
+				return list.remove(list.size()-1);			
+			}
+			}
+	//returns the first item of this queue without removing it
+	//returns null, if this queue is empty
+		public T peek() {
+			if(list.size() == 0) {
+				return null;
+			}else {
+				return list.get(list.size()-1);
+
+			}
+		}
+		
+	//returns true if this queue contains no elements		
+		public boolean isEmpty() {
+			return list.isEmpty();
+		}
+	//returns the number of elements in this queue
+		public int size() {
+			return list.size();
+		}
+		public String toString() {
+			return "List: "+ list;
+		}
+	
+}
