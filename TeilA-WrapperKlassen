@@ -1,0 +1,25 @@
+In Java am besten speichert man objekte, aber in Java ist auch Möglich  primitive Datentypen zu speichern, wie z.B char, long float etc. 
+Diese primitive Datentypen sind keine Objekte. Dazu bietet Java die sogenannte Wrapper Klassen, die Objete sind, damit können wir 
+die zugehörigen Primitive Typen darstellen. 
+
+Beispiel:
+
+int i = 2;
+Hier wird die Zahl 2 als primitiver Typ int und Variable gespeichert.
+
+Wenn wir es als Objekt darstellen möchten, gibt es die folgende Darstellung:
+Integer i = new Integer(2);
+
+Wrapper Klassen sind in Java notwendig, weil es git in Java Methoden die Objekte als Paramter fordern. 
+
+Die automatische Konvertierung von Primitiven Typen zu Wrapper Klasse nennt man autoboxing. 
+Die Konvertierung von Wrapper Kalsse zu Primitiven Typ ist natürlich auch Möglich. 
+
+Beispiele: 
+  
+    Integer ii = new Integer(i); //Boxing
+		Integer jj = i;				//AutoBoxing 
+		
+		int j = jj.intValue();      //Unboxing
+		int k = jj;					//Auto Unboxing
+    
