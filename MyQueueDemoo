@@ -1,3 +1,4 @@
+
 public class MyQueueDemoo {
 
 	public static void main(String[] args) {
@@ -28,12 +29,18 @@ public class MyQueueDemoo {
 		listInt.dequeue();	
 		listInt.dequeue();		
 		listInt.dequeue();	
+		listInt.dequeue();	
+
 		
 		listDoub.dequeue();	
+		listDoub.dequeue();	
 		listDoub.dequeue();		
+
 		
 		listString.dequeue();	
+		listString.dequeue();
 		listString.dequeue();		
+
 		
 
 		System.out.println();
@@ -44,18 +51,23 @@ public class MyQueueDemoo {
 		System.out.println();
 		System.out.println("Integer Empty?: "+listInt.isEmpty());
 		System.out.println("Integer Size: "+listInt.size());
+		System.out.println("Integer Peek: "+listInt.peek());
+
 		
 		System.out.println();
 		System.out.println("Double Empty?: "+listDoub.isEmpty());
 		System.out.println("Double Size "+listDoub.size());
+		System.out.println("Double Peek: "+listDoub.peek());
 		System.out.println();
 
 		System.out.println("String Empty?: "+listString.isEmpty());
 		System.out.println("String Size: "+listString.size());
+		System.out.println("String Peek: "+listString.peek());
+
 
 		//noch hinzufugen neue Queue mit 1000 Elemente fuellen, anschliessend weiter 1000 zufaellige mit operationen durchfuhren. 
 		
-		
+	
+	
 	}
-
 }
