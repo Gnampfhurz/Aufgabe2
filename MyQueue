@@ -41,7 +41,7 @@ public class MyQueue<T> {
 			return list.size();
 		}
 		public String toString() {
-			return "List: "+ list;
+			return "are the elements of the queue): "+ list;
 		}
 	
 }
